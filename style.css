@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: monospace;
+  font-size: 20px;
+  --red-value: 97;
+  --green-value: 27;
+  --blue-value: 183;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
+header {
+  height: 100%;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(
+    var(--red-value),
+    var(--green-value),
+    var(--blue-value),
+    0.85
+  );
+}
+
+main {
+  height: 100%;
+  background-color: rgb(
+    var(--red-value),
+    var(--green-value),
+    var(--blue-value)
+  );
+}
+
+#red {
+  accent-color: red;
+}
+
+#green {
+  accent-color: green;
+}
+
+#blue {
+  accent-color: blue;
+}
